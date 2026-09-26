@@ -4,7 +4,7 @@ export default function CategoryTags({ tags }: { tags: string[] }) {
       {tags.map((tag) => (
         <span
           key={tag}
-          className="rounded-full border border-border-strong bg-surface-3 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-text-secondary"
+          className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-background"
         >
           {tag}
         </span>

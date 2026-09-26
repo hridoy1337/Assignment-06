@@ -8,7 +8,7 @@ export default function WorkoutCard({ workout }: { workout: Workout }) {
   return (
     <Link
       href={`/exercise/${workout.id}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-border-subtle bg-surface transition hover:-translate-y-1 hover:border-accent/60 hover:shadow-lg hover:shadow-black/30"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-accent bg-surface-2 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30"
     >
       <div className="relative h-44 w-full overflow-hidden bg-surface-3">
         <Image
@@ -18,7 +18,6 @@ export default function WorkoutCard({ workout }: { workout: Workout }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           className="object-cover transition duration-500 group-hover:scale-105"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
       </div>
 
       <div className="flex flex-1 flex-col gap-3 p-5">

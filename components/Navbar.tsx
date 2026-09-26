@@ -49,18 +49,18 @@ export default function Navbar() {
         </nav>
 
         {/* Right badges - desktop */}
-        <div className="hidden items-center gap-3 md:flex">
-          <Link
-            href="/my-plan"
-            className="rounded-full bg-accent px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-background transition hover:bg-accent-dim"
-          >
-            Plan <span className="ml-1">{todaysPlan.length}</span>
+        <div className="hidden items-center gap-6 md:flex">
+          <Link href="/my-plan" className="flex items-center gap-2 transition hover:opacity-80">
+            <span className="text-sm font-bold uppercase tracking-wide text-text-primary">Plan</span>
+            <span className="flex h-6 min-w-6 items-center justify-center rounded-full bg-accent px-1.5 text-xs font-bold text-background">
+              {todaysPlan.length}
+            </span>
           </Link>
-          <Link
-            href="/my-plan"
-            className="rounded-full border border-border-strong px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-text-primary transition hover:border-accent hover:text-accent"
-          >
-            Saved <span className="ml-1">{saved.length}</span>
+          <Link href="/my-plan" className="flex items-center gap-2 transition hover:opacity-80">
+            <span className="text-sm font-bold uppercase tracking-wide text-text-primary">Saved</span>
+            <span className="flex h-6 min-w-6 items-center justify-center rounded-full border border-border-strong px-1.5 text-xs font-bold text-text-primary">
+              {saved.length}
+            </span>
           </Link>
         </div>
 
@@ -93,20 +93,26 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <div className="mt-2 flex items-center gap-3">
+            <div className="mt-2 flex items-center gap-6">
               <Link
                 href="/my-plan"
                 onClick={() => setOpen(false)}
-                className="rounded-full bg-accent px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-background"
+                className="flex items-center gap-2"
               >
-                Plan {todaysPlan.length}
+                <span className="text-sm font-bold uppercase tracking-wide text-text-primary">Plan</span>
+                <span className="flex h-6 min-w-6 items-center justify-center rounded-full bg-accent px-1.5 text-xs font-bold text-background">
+                  {todaysPlan.length}
+                </span>
               </Link>
               <Link
                 href="/my-plan"
                 onClick={() => setOpen(false)}
-                className="rounded-full border border-border-strong px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-text-primary"
+                className="flex items-center gap-2"
               >
-                Saved {saved.length}
+                <span className="text-sm font-bold uppercase tracking-wide text-text-primary">Saved</span>
+                <span className="flex h-6 min-w-6 items-center justify-center rounded-full border border-border-strong px-1.5 text-xs font-bold text-text-primary">
+                  {saved.length}
+                </span>
               </Link>
             </div>
           </nav>

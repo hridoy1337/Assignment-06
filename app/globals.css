@@ -10,8 +10,8 @@
   --text-primary: #ffffff;
   --text-secondary: #9ca3af;
   --text-tertiary: #6b7280;
-  --accent: #ccff00;
-  --accent-dim: #c2f800;
+  --accent: #c4f000;
+  --accent-dim: #b3d900;
 }
 
 @theme inline {
