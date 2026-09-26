@@ -9,7 +9,6 @@ export default function DetailActions({ workout }: { workout: Workout }) {
 
   const inPlan = isInPlan(workout.id);
   const alreadySaved = isSaved(workout.id);
-  // don't let people over-stuff the day - cap is 5, see PlanContext
   const planIsFull = todaysPlan.length >= planCap && !inPlan;
 
   return (
