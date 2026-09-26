@@ -8,7 +8,7 @@ export default function WorkoutCard({ workout }: { workout: Workout }) {
   return (
     <Link
       href={`/exercise/${workout.id}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-accent bg-surface-2 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-transparent bg-surface-2 transition hover:-translate-y-1 hover:border-accent hover:shadow-lg hover:shadow-black/30"
     >
       <div className="relative h-44 w-full overflow-hidden bg-surface-3">
         <Image
